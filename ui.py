@@ -70,6 +70,9 @@ class MovieRankerUI:
         btn_add = ttk.Button(self.frame_add, text="Add Movie", command=self.add_movie)
         btn_add.pack(pady=10)
 
+        btn_delete = ttk.Button(self.frame_add, text="Delete All Movies", command=self.delete_all_movies)
+        btn_delete.pack(pady=5)
+
     def setup_rate_frame(self):
         self.lbl_rate = ttk.Label(self.frame_rate, text="How would you rate this movie?")
         self.lbl_rate.pack(pady=20)
@@ -137,6 +140,14 @@ class MovieRankerUI:
         self.lbl_rate.config(text=f"How would you rate '{title}'?")
         self.notebook.select(self.frame_rate)
 
+    def delete_all_movies(self):
+        if messagebox.askyesno("Confirm Delete", "Are you sure you want to delete all movies? This cannot be undone."):
+            if self.persistence.delete_movies():
+                self.movies = []
+                self.refresh_rankings_list()
+                messagebox.showinfo("Success", "All movies have been deleted.")
+            else:
+                messagebox.showerror("Error", "Failed to delete movies.")
     # ---------------------------
     # Rating Functions
     # ---------------------------

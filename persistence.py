@@ -18,6 +18,15 @@ class PersistenceManager:
         except Exception as e:
             print("Error saving movies:", e)
 
+    def delete_movies(self):
+        try:
+            if os.path.exists(self.filename):
+                os.remove(self.filename)
+            return True
+        except Exception as e:
+            print("Error deleting movies:", e)
+            return False
+
     def load_movies(self):
         if not os.path.exists(self.filename):
             return []
