@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Daredevil",
+    "rating": "good",
+    "elo": 1429.8157329084304,
+    "wins": 0,
+    "losses": 2,
+    "games_played": 2,
+    "visible_score": 8.6
+  },
+  {
+    "title": "The Dark Knight",
+    "rating": "good",
+    "elo": 1439.4259849651294,
+    "wins": 1,
+    "losses": 3,
+    "games_played": 4,
+    "visible_score": 8.6
+  },
+  {
+    "title": "Where the Wild Things Are",
+    "rating": "okay",
+    "elo": 1438.1842670915696,
+    "wins": 1,
+    "losses": 0,
+    "games_played": 1,
+    "visible_score": 6.1
+  },
+  {
+    "title": "Stranger Things",
+    "rating": "good",
+    "elo": 1563.4640662512336,
+    "wins": 2,
+    "losses": 0,
+    "games_played": 2,
+    "visible_score": 8.9
+  },
+  {
+    "title": "Dawn of the Planet of the Apes",
+    "rating": "good",
+    "elo": 1529.109948783637,
+    "wins": 1,
+    "losses": 0,
+    "games_played": 1,
+    "visible_score": 8.8
+  }
+]
